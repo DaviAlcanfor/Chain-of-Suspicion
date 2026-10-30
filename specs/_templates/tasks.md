@@ -1,0 +1,9 @@
+# Tarefas — NNN Título
+
+Cada tarefa é pequena, testável e referencia os requisitos que atende.
+
+- [ ] T1 (R1) Escrever teste de ...
+- [ ] T2 (R1) Implementar ...
+- [ ] T3 (R2) ...
+
+Ao fim: `pytest`, `mypy` e `ruff` verdes; spec marcada como `implementada`.
