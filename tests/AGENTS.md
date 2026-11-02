@@ -24,4 +24,4 @@ Testes com pytest. As subpastas espelham as pastas de `src/chain_of_suspicion/`.
 
 ## Comando
 
-`.venv/Scripts/python.exe -m pytest -q tests/<pasta>`
+`just testar tests/<pasta>` (ou `uv run pytest -q tests/<pasta>`)

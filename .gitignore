@@ -12,3 +12,5 @@ godot/.godot/
 godot/.import/
 godot/export_presets.cfg
 godot/*.translation
+build/
+dist/

@@ -23,5 +23,5 @@ Cliente 3D (Godot 4). **Burro por princípio**: mostra eventos e envia comandos 
 - Nenhuma regra de jogo em GDScript. Dúvida de "pode ou não" => pergunte à API.
 - Tudo o que o jogador vê vem de evento ou de `/estado`; nunca invente estado local.
 - Nomes de cena e modelo seguem as chaves de `docs/`; renomear exige mudar `conteudo/` e regenerar docs.
-- Ainda não há arte nem cenas finais: os caminhos são reservados.
+- Ainda não há arte nem cenas finais: os caminhos são reservados e a direção de arte está pendente (`docs/arte/direcao.md`). Não produza assets antes dela.
 - Explique conceitos do Godot devagar (o dono é de dados): nó, cena, sinal, script.

@@ -9,6 +9,7 @@ Documentação do projeto. Parte é escrita à mão (ADRs, catálogo) e parte é
 | `CATALOGO.md` | à mão: índice de pastas, `AGENTS.md` e quando ler cada um |
 | `adr/NNNN-*.md` | à mão: decisões de arquitetura, numeradas e imutáveis |
 | `elenco.md`, `mapas.md`, `casos/*.md` | **gerados** por `python tools/gerar_docs.py` |
+| `arte/direcao.md` | à mão: direção de arte (decisões ainda pendentes) |
 
 ## Regras desta pasta
 

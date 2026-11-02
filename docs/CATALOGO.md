@@ -35,6 +35,7 @@
 | criar um erro novo | `erros/excecoes.py`, `erros/codigos.py`, `api/handlers.py` |
 | criar um endpoint | `api/rotas/` + `servicos/` (+ spec 005) |
 | entender por que uma decisão foi tomada | `docs/adr/` |
+| ver as decisões de arte (pendentes) | `docs/arte/direcao.md` |
 | ver a solução de um caso (spoiler) | `docs/casos/` |
 
 ## Specs e ADRs (leia só as citadas pela tarefa)
@@ -48,7 +49,7 @@
 | 008 | conteúdo e decisão por turno |
 | 009 | reorganização e contexto por pasta |
 
-ADRs vigentes: 0001 (LangGraph), 0002 (Godot), 0003 (Postgres, adiada), 0004 (modelos), 0006 (juiz), 0007 (Dishka), 0008 (Python 3.14), 0010 (Gateway), 0011 (decisor escolhe), 0012 (contexto por pasta). Substituídas: 0005 (por 0007), 0009 (por 0010).
+ADRs vigentes: 0001 (LangGraph), 0002 (Godot), 0003 (Postgres, adiada), 0004 (modelos), 0006 (juiz), 0007 (Dishka), 0008 (Python 3.14), 0010 (Gateway), 0011 (decisor escolhe), 0012 (contexto por pasta), 0013 (ferramentas). Substituídas: 0005 (por 0007), 0009 (por 0010).
 
 ## Regra de manutenção
 

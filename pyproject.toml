@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "chain-of-suspicion"
 version = "0.1.0"
@@ -16,7 +20,7 @@ dependencies = [
     "tenacity>=9",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "pytest>=8",
     "mypy>=1.11",
@@ -39,7 +43,7 @@ files = ["src"]
 src = ["src", "tests"]
 line-length = 100
 target-version = "py314"
-extend-exclude = [".claude"]
+extend-exclude = [".claude", "build", "dist"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "DTZ", "BLE", "SIM", "C4", "RUF", "ERA"]
