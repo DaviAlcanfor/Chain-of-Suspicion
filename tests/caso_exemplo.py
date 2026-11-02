@@ -1,8 +1,8 @@
 from datetime import UTC, datetime, timedelta
 from typing import Any
 
-from jogo.calendario import Calendario
-from jogo.caso import (
+from chain_of_suspicion.dominio.calendario import Calendario
+from chain_of_suspicion.dominio.caso import (
     Alibi,
     Caso,
     CondicaoAcerto,
@@ -15,10 +15,10 @@ from jogo.caso import (
     Presenca,
     Segredo,
 )
-from jogo.enums import MetodoCrime, Papel, TipoObjetivo, TipoPista
-from jogo.ids import GeradorIds
-from jogo.mapa import Conexao, Local, Mapa
-from jogo.relogio import Intervalo
+from chain_of_suspicion.dominio.enums import MetodoCrime, Papel, TipoObjetivo, TipoPista
+from chain_of_suspicion.dominio.ids import GeradorIds
+from chain_of_suspicion.dominio.mapa import Conexao, Local, Mapa
+from chain_of_suspicion.dominio.relogio import Intervalo
 
 _ids = GeradorIds(42)
 

@@ -1,6 +1,6 @@
 # 004 — Camada de LLM
 
-- Status: rascunho
+- Status: aprovada (estrutura em 007)
 - Depende de: 003, ADR 0004
 
 ## Problema

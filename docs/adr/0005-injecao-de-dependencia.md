@@ -1,6 +1,6 @@
 # 0005 — Injeção de dependência: Wireup ou Dishka
 
-- Status: **em aberto**
+- Status: substituída pela 0007
 
 ## Contexto
 

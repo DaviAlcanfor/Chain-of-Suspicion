@@ -1,6 +1,6 @@
 # 005 — API FastAPI
 
-- Status: rascunho
+- Status: aprovada (estrutura em 007)
 - Depende de: 003, 004, ADR 0005
 
 ## Problema
