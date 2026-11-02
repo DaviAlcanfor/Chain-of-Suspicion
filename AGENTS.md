@@ -32,22 +32,24 @@ Não implemente spec em `rascunho` sem pedir aprovação.
 
 ## Comandos
 
-Ambiente: Python 3.14 em `.venv` (ADR 0008).
+Ambiente: Python 3.14 (`.python-version`), gerenciado por `uv`; tarefas no `justfile` (ADR 0013).
 
 ```bash
-.venv/Scripts/python.exe -m pytest -q
-.venv/Scripts/python.exe -m mypy
-.venv/Scripts/python.exe -m ruff check .
-.venv/Scripts/python.exe tools/gerar_docs.py
-uvicorn chain_of_suspicion.main:app --reload
+just instalar          # cria o .venv e instala tudo
+just checar            # ruff + mypy + pytest
+just testar tests/api  # só uma pasta
+just docs              # regenera docs/elenco.md, mapas.md e casos/
+just rodar             # API em http://127.0.0.1:8000
 ```
 
-Uma tarefa só termina com `pytest`, `mypy` e `ruff` verdes. Se mexer em `conteudo/`, rode também `gerar_docs.py` (um teste falha se `docs/` divergir).
+Sem `just`: `uv run ruff check .`, `uv run mypy`, `uv run pytest -q`.
+
+Uma tarefa só termina com `just checar` verde. Se mexer em `conteudo/`, rode também `just docs` (um teste falha se `docs/` divergir). Dependência nova: `uv add <pacote>` e commit do `uv.lock`.
 
 ## O que não fazer
 
 - Não adicionar dependência sem registrar o motivo no `plan.md` da spec.
 - Não editar ADR antiga; crie outra que a substitui.
 - Não colocar segredo, chave de API ou `.env` no repositório.
-- Não declarar tarefa pronta sem rodar os três comandos acima.
+- Não declarar tarefa pronta sem `just checar` verde.
 - Não rodar `ruff format` em arquivos que você não criou (gera diff de formatação alheio).
