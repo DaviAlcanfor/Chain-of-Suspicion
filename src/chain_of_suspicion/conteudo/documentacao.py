@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 from pathlib import Path
 
@@ -50,6 +51,18 @@ def documentar_persona(persona: Persona) -> str:
             "",
         ]
     )
+
+
+def elenco_em_json() -> str:
+    dados = {
+        p.chave.value: {
+            "nome": p.nome,
+            **p.aparencia.model_dump(mode="json", exclude={"idade", "nota_de_arte"}),
+            "hex_da_roupa": p.aparencia.hex_da_roupa,
+        }
+        for p in ELENCO.values()
+    }
+    return json.dumps(dados, ensure_ascii=False, indent=2) + "\n"
 
 
 def documentar_elenco() -> str:

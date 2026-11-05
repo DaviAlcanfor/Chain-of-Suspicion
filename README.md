@@ -11,8 +11,8 @@ Simulação de mistério de assassinato em que **agentes de IA jogam entre si**:
 | 12 personas, 3 mapas e 5 casos | prontos, com docs geradas em `docs/` (spec 008) |
 | Pistas, acusação e interrogatório no laço | **faltam** (spec 003) |
 | Teste contra o Gateway real | **não feito** (falta chave) |
-| Cliente Godot | só o esqueleto em `godot/` (spec 006) |
-| Direção de arte | **pendente**: decisões em aberto em `docs/arte/direcao.md` |
+| Cliente Godot | esqueleto ligado à API (spec 006) e fatia de arte com partida gravada (spec 010) |
+| Direção de arte | decidida em `docs/arte/direcao.md`; 1 de 24 salas e as 12 personas |
 
 ## Rodando
 
