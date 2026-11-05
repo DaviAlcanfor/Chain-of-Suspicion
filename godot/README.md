@@ -1,12 +1,14 @@
 # Cliente Godot
 
-Esqueleto da fase 0 da spec 006. Não contém regra de jogo; só mostra o que a API manda.
+Não contém regra de jogo; só mostra o que recebe. Hoje há duas cenas: a fatia de arte (spec 010) e o esqueleto ligado à API (spec 006).
 
 ## Como abrir
 
 1. Instale o Godot 4 (versão estável 4.4 ou mais nova).
 2. No gerenciador de projetos: Importar → escolha `godot/project.godot`.
-3. Aperte F5. A cena abre uma janela com um chão e uma câmera e imprime no painel de saída o que a API respondeu.
+3. Aperte F5. Abre a biblioteca e toca a partida gravada. **Tab** abre o quadro de investigação.
+
+Para testar a conexão com a API, abra `scenes/main.tscn` e aperte F6 (F6 roda só a cena aberta). Ela imprime no painel de saída o que a API respondeu.
 
 Sem API no ar, aparece um aviso de falha de conexão. É esperado. Para ver a resposta funcionando antes de existir backend de verdade:
 
@@ -30,8 +32,11 @@ e rode o projeto de novo.
 | `config.cfg` | URL da API e id da partida a acompanhar |
 | `scripts/api_client.gd` | Chamadas HTTP (`obter`, `enviar`) |
 | `scripts/event_stream.gd` | WebSocket de eventos, com reconexão que retoma pelo último evento |
-| `scripts/main.gd` | Liga tudo e monta a cena 3D mínima |
+| `scripts/main.gd` | Liga a API à cena 3D mínima |
+| `scripts/fatia.gd` | Toca `dados/partida_gravada.json` na biblioteca |
+| `scripts/quadro.gd` | Quadro de cortiça, polaroides e fio vermelho |
+| `scripts/arte/` | Formas, personagens e salas, todos montados por código |
 
-## Próximos passos (spec 006)
+## Próximos passos
 
-Fase 1: uma sala por local do mapa e uma cápsula por personagem que muda de sala quando chega um evento de movimento.
+Ligar a fatia à API ao vivo, o que exige a API dizer qual persona é cada personagem (spec 010, riscos), e fazer as outras salas (`docs/arte/pipeline.md`).

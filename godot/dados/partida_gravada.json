@@ -1,0 +1,29 @@
+{
+  "cena": "res://cenas/mansao/biblioteca.tscn",
+  "local": "Biblioteca",
+  "mapa": "Mansão Villaça",
+  "manchete": "EMPRESÁRIO É ENCONTRADO MORTO NA MANSÃO VILLAÇA",
+  "resumo": "Otávio Alves foi achado caído ao lado de uma taça. A chuva bloqueou a estrada e todos que estavam na casa seguem lá.",
+  "vitima": "otavio",
+  "suspeitos": ["marta", "paulo", "lia", "caio"],
+  "presentes": [
+    {"ator": "otavio", "ponto": "corpo", "morto": true, "giro": 1.2},
+    {"ator": "marta", "ponto": "lareira"},
+    {"ator": "paulo", "ponto": "escrivaninha"},
+    {"ator": "alencar", "ponto": "porta"}
+  ],
+  "eventos": [
+    {"seq": 1, "tipo": "acao_aplicada", "acao": "mover", "ator": "alencar", "ponto": "centro", "instante": "2026-11-06T22:40:00-03:00"},
+    {"seq": 2, "tipo": "fala", "ator": "alencar", "alvo": "paulo", "detalhe": "Ninguém sai desta casa até eu terminar.", "instante": "2026-11-06T22:41:00-03:00"},
+    {"seq": 3, "tipo": "acao_aplicada", "acao": "mover", "ator": "alencar", "ponto": "junto_ao_corpo", "instante": "2026-11-06T22:42:00-03:00"},
+    {"seq": 4, "tipo": "acao_aplicada", "acao": "examinar_local", "ator": "alencar", "alvo": "otavio", "detalhe": "Copo com resíduo", "instante": "2026-11-06T22:44:00-03:00"},
+    {"seq": 5, "tipo": "fala", "ator": "alencar", "alvo": "otavio", "detalhe": "Uma taça, e resíduo no fundo. Isto vai para a perícia.", "instante": "2026-11-06T22:45:00-03:00"},
+    {"seq": 6, "tipo": "acao_aplicada", "acao": "mover", "ator": "alencar", "ponto": "mesa", "instante": "2026-11-06T22:47:00-03:00"},
+    {"seq": 7, "tipo": "fala", "ator": "alencar", "alvo": "marta", "detalhe": "Onde a senhora estava às dez horas?", "instante": "2026-11-06T22:48:00-03:00"},
+    {"seq": 8, "tipo": "fala", "ator": "marta", "alvo": "alencar", "detalhe": "No quarto de hóspedes, inspetor. E agradeceria se baixasse o tom.", "instante": "2026-11-06T22:48:30-03:00"},
+    {"seq": 9, "tipo": "acao_aplicada", "acao": "interrogar", "ator": "alencar", "alvo": "marta", "detalhe": "Marta: diz que estava no quarto de hóspedes", "instante": "2026-11-06T22:49:00-03:00"},
+    {"seq": 10, "tipo": "fala", "ator": "paulo", "alvo": "alencar", "detalhe": "A rigor, inspetor, ninguém aqui é obrigado a... bem, a rigor, depende.", "instante": "2026-11-06T22:50:00-03:00"},
+    {"seq": 11, "tipo": "acao_aplicada", "acao": "interrogar", "ator": "alencar", "alvo": "paulo", "detalhe": "Paulo: fala demais quando está nervoso. Por quê?", "instante": "2026-11-06T22:51:00-03:00"},
+    {"seq": 12, "tipo": "fala", "ator": "alencar", "alvo": "paulo", "detalhe": "Vamos conversar, doutor. Um de cada vez.", "instante": "2026-11-06T22:52:00-03:00"}
+  ]
+}

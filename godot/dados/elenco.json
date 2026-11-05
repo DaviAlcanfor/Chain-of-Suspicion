@@ -1,0 +1,193 @@
+{
+  "marta": {
+    "nome": "Marta",
+    "altura_cm": 168,
+    "porte": "magro",
+    "pele": "claro",
+    "cabelo_cor": "grisalho",
+    "cabelo_estilo": "penteado_para_tras",
+    "pelos_faciais": "nenhum",
+    "roupa": "tailleur",
+    "cor_da_roupa": "azul_marinho",
+    "acessorios": [
+      "colar_de_perolas",
+      "anel_de_safira"
+    ],
+    "hex_da_roupa": "#1F2F5C"
+  },
+  "paulo": {
+    "nome": "Paulo",
+    "altura_cm": 178,
+    "porte": "medio",
+    "pele": "medio_claro",
+    "cabelo_cor": "castanho",
+    "cabelo_estilo": "repartido_de_lado",
+    "pelos_faciais": "nenhum",
+    "roupa": "terno",
+    "cor_da_roupa": "cinza_chumbo",
+    "acessorios": [
+      "oculos_de_aro_fino",
+      "pasta_de_couro"
+    ],
+    "hex_da_roupa": "#6B6F76"
+  },
+  "lia": {
+    "nome": "Lia",
+    "altura_cm": 163,
+    "porte": "robusto",
+    "pele": "medio_escuro",
+    "cabelo_cor": "preto",
+    "cabelo_estilo": "coque",
+    "pelos_faciais": "nenhum",
+    "roupa": "avental_sobre_vestido",
+    "cor_da_roupa": "terracota",
+    "acessorios": [
+      "brincos_de_argola"
+    ],
+    "hex_da_roupa": "#C8553D"
+  },
+  "caio": {
+    "nome": "Caio",
+    "altura_cm": 180,
+    "porte": "magro",
+    "pele": "medio",
+    "cabelo_cor": "castanho_claro",
+    "cabelo_estilo": "ondulado_comprido",
+    "pelos_faciais": "nenhum",
+    "roupa": "camisa_de_linho_e_jeans",
+    "cor_da_roupa": "amarelo_ocre",
+    "acessorios": [
+      "pulseiras_de_couro"
+    ],
+    "hex_da_roupa": "#D9A441"
+  },
+  "alencar": {
+    "nome": "Inspetor Alencar",
+    "altura_cm": 175,
+    "porte": "robusto",
+    "pele": "medio",
+    "cabelo_cor": "grisalho",
+    "cabelo_estilo": "curto",
+    "pelos_faciais": "bigode",
+    "roupa": "sobretudo_e_gravata",
+    "cor_da_roupa": "marrom_terra",
+    "acessorios": [
+      "caderneta",
+      "chapeu_de_feltro"
+    ],
+    "hex_da_roupa": "#7A5A3A"
+  },
+  "otavio": {
+    "nome": "Otávio",
+    "altura_cm": 182,
+    "porte": "robusto",
+    "pele": "claro",
+    "cabelo_cor": "branco",
+    "cabelo_estilo": "volumoso",
+    "pelos_faciais": "nenhum",
+    "roupa": "colete_de_tweed",
+    "cor_da_roupa": "marrom_escuro",
+    "acessorios": [
+      "bengala_de_ebano",
+      "relogio_de_bolso"
+    ],
+    "hex_da_roupa": "#4A3B2A"
+  },
+  "helena": {
+    "nome": "Delegada Helena",
+    "altura_cm": 170,
+    "porte": "atletico",
+    "pele": "medio_escuro",
+    "cabelo_cor": "preto",
+    "cabelo_estilo": "rabo_de_cavalo",
+    "pelos_faciais": "nenhum",
+    "roupa": "blazer_e_camisa",
+    "cor_da_roupa": "preto_fosco",
+    "acessorios": [
+      "distintivo",
+      "relogio_de_pulso"
+    ],
+    "hex_da_roupa": "#222222"
+  },
+  "renato": {
+    "nome": "Dr. Renato",
+    "altura_cm": 177,
+    "porte": "medio",
+    "pele": "medio_claro",
+    "cabelo_cor": "grisalho",
+    "cabelo_estilo": "curto",
+    "pelos_faciais": "barba_rente",
+    "roupa": "paleto_e_gravata_borboleta",
+    "cor_da_roupa": "verde_floresta",
+    "acessorios": [
+      "maleta_medica",
+      "estetoscopio"
+    ],
+    "hex_da_roupa": "#2E5D4B"
+  },
+  "beatriz": {
+    "nome": "Beatriz",
+    "altura_cm": 166,
+    "porte": "magro",
+    "pele": "claro",
+    "cabelo_cor": "ruivo",
+    "cabelo_estilo": "ondulado_nos_ombros",
+    "pelos_faciais": "nenhum",
+    "roupa": "jaqueta_de_couro",
+    "cor_da_roupa": "ferrugem",
+    "acessorios": [
+      "gravador",
+      "mochila_de_lona"
+    ],
+    "hex_da_roupa": "#B5412E"
+  },
+  "joaquim": {
+    "nome": "Joaquim",
+    "altura_cm": 172,
+    "porte": "magro",
+    "pele": "medio_escuro",
+    "cabelo_cor": "branco",
+    "cabelo_estilo": "ralo",
+    "pelos_faciais": "bigode_caido",
+    "roupa": "macacao_de_brim",
+    "cor_da_roupa": "bege_areia",
+    "acessorios": [
+      "molho_de_chaves",
+      "chapeu_de_palha"
+    ],
+    "hex_da_roupa": "#8C7B5A"
+  },
+  "vera": {
+    "nome": "Vera",
+    "altura_cm": 172,
+    "porte": "magro",
+    "pele": "claro",
+    "cabelo_cor": "loiro_platinado",
+    "cabelo_estilo": "ondas_de_festa",
+    "pelos_faciais": "nenhum",
+    "roupa": "vestido_de_noite",
+    "cor_da_roupa": "vinho",
+    "acessorios": [
+      "leque",
+      "brincos_longos",
+      "batom_vermelho"
+    ],
+    "hex_da_roupa": "#8E1B3A"
+  },
+  "davi": {
+    "nome": "Davi",
+    "altura_cm": 185,
+    "porte": "atletico",
+    "pele": "escuro",
+    "cabelo_cor": "preto",
+    "cabelo_estilo": "curto",
+    "pelos_faciais": "barba_aparada",
+    "roupa": "uniforme_de_comandante",
+    "cor_da_roupa": "azul_petroleo",
+    "acessorios": [
+      "bone_de_comandante",
+      "binoculo"
+    ],
+    "hex_da_roupa": "#1D4E5F"
+  }
+}

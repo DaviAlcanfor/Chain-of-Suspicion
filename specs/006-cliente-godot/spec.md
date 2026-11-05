@@ -11,8 +11,8 @@ Quero ver a simulação acontecendo num mundo 3D, e no futuro andar por ele.
 
 O cliente só cresce depois que o motor joga uma partida inteira (specs 003 a 005). Antes disso, só o esqueleto em `godot/`.
 
-- Fase 0 (existe): esqueleto que conecta na API e imprime eventos.
-- Fase 1: cena fixa com os locais como salas e personagens como cápsulas que se teleportam conforme eventos de movimento.
+- Fase 0 (existe, em `scenes/main.tscn`): esqueleto que conecta na API e imprime eventos.
+- Fase 1: cena fixa com os locais como salas e personagens que mudam de lugar conforme eventos de movimento. A arte segue a spec 010, então não há cápsulas.
 - Fase 2: movimento animado entre salas, ciclo de dia e noite visual, balões de fala.
 - Fase 3: jogador humano anda em primeira pessoa e envia ações pela API.
 
@@ -26,7 +26,7 @@ O cliente só cresce depois que o motor joga uma partida inteira (specs 003 a 00
 
 ## Critérios de aceite
 
-- [ ] Fase 0: com a API no ar, rodar o projeto imprime o status da API e cada evento recebido.
+- [ ] Fase 0: com a API no ar, rodar `scenes/main.tscn` imprime o status da API e cada evento recebido.
 - [ ] Fase 1: um evento `mover` muda a posição visível do personagem.
 
 ## Riscos

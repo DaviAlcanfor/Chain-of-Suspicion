@@ -8,7 +8,7 @@ Uma pasta por funcionalidade, com `spec.md` (o quê e por quê), `plan.md` (como
 | --- | --- |
 | `constitution.md` | princípios que nunca mudam (mudar exige ADR) |
 | `_templates/` | modelos de `spec.md`, `plan.md`, `tasks.md` |
-| `001`–`009` | ver a lista em `docs/CATALOGO.md` |
+| `001`–`010` | ver a lista em `docs/CATALOGO.md` |
 
 ## Regras desta pasta
 
@@ -18,7 +18,7 @@ Uma pasta por funcionalidade, com `spec.md` (o quê e por quê), `plan.md` (como
 - Código divergiu da spec? **Corrija a spec primeiro.**
 - Registre limites conhecidos em "Riscos e perguntas em aberto"; spec não afirma mais do que o código faz.
 - Dependência nova entra no `plan.md`, com motivo.
-- Spec nova ganha número seguinte (`010-...`) e linha no catálogo.
+- Spec nova ganha número seguinte (`011-...`) e linha no catálogo.
 
 ## Leitura mínima por tarefa
 

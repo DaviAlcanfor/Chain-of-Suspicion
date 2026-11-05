@@ -19,7 +19,7 @@
 | `src/chain_of_suspicion/api/` | [AGENTS.md](../src/chain_of_suspicion/api/AGENTS.md) | rotas HTTP/WebSocket, esquemas, erros HTTP | criar ou mudar endpoint |
 | `src/chain_of_suspicion/di/` | [AGENTS.md](../src/chain_of_suspicion/di/AGENTS.md) | providers do Dishka | ligar dependência nova |
 | `tests/` | [AGENTS.md](../tests/AGENTS.md) | subpastas espelhadas, helpers, falsos | escrever ou rodar testes |
-| `specs/` | [AGENTS.md](../specs/AGENTS.md) | constituição, modelos e specs 001–009 | começar funcionalidade |
+| `specs/` | [AGENTS.md](../specs/AGENTS.md) | constituição, modelos e specs 001–010 | começar funcionalidade |
 | `docs/` | [AGENTS.md](../docs/AGENTS.md) | ADRs, docs geradas, este catálogo | escrever ADR ou doc |
 | `godot/` | [AGENTS.md](../godot/AGENTS.md) | cliente 3D e contratos que ele consome | trabalhar no cliente |
 
@@ -35,7 +35,8 @@
 | criar um erro novo | `erros/excecoes.py`, `erros/codigos.py`, `api/handlers.py` |
 | criar um endpoint | `api/rotas/` + `servicos/` (+ spec 005) |
 | entender por que uma decisão foi tomada | `docs/adr/` |
-| ver as decisões de arte (pendentes) | `docs/arte/direcao.md` |
+| ver as decisões de arte | `docs/arte/direcao.md` (referências e pipeline na mesma pasta) |
+| criar uma sala ou peça de personagem | `docs/arte/pipeline.md` e `godot/scripts/arte/` |
 | ver a solução de um caso (spoiler) | `docs/casos/` |
 
 ## Specs e ADRs (leia só as citadas pela tarefa)
@@ -48,6 +49,7 @@
 | 007 | arquitetura do backend |
 | 008 | conteúdo e decisão por turno |
 | 009 | reorganização e contexto por pasta |
+| 010 | arte: direção e fatia vertical |
 
 ADRs vigentes: 0001 (LangGraph), 0002 (Godot), 0003 (Postgres, adiada), 0004 (modelos), 0006 (juiz), 0007 (Dishka), 0008 (Python 3.14), 0010 (Gateway), 0011 (decisor escolhe), 0012 (contexto por pasta), 0013 (ferramentas). Substituídas: 0005 (por 0007), 0009 (por 0010).
 

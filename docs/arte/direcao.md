@@ -1,33 +1,37 @@
 # Direção de arte
 
-> **Status: pendente.** As decisões abaixo ainda não foram tomadas pelo dono do projeto. Nenhuma arte, cena ou modelo deve ser produzido antes delas. Este arquivo é onde a direção final vai ser escrita.
+> **Status: decidida em 2026-11-05**, a partir de `referencias.md`. Como produzir: `pipeline.md`. Prova do estilo: `godot/scenes/fatia.tscn` (spec 010), com imagens em `capturas/`.
 
-## Decisões em aberto
+## Em uma frase
 
-| Decisão | Opções | Observação |
+Uma casa de bonecas noir vista de cima: cada sala é um corte iluminado flutuando na noite escura, cheio de objetos para olhar, e a investigação acontece num quadro de cortiça com fio vermelho.
+
+## Decisões
+
+| Decisão | Escolha | Por quê |
 | --- | --- | --- |
-| Dimensão | 2D, 3D ou 2.5D | 3D pede mais assets; 2D/2.5D reduz o volume de modelagem |
-| Estilo | low-poly, estilizado com cores chapadas, pintado à mão | escolher pelo que dá para produzir (ver restrições) |
-| Câmera | fixa por cômodo (estilo *Clue*), isométrica, terceira pessoa | afeta quanto cada local precisa ser modelado |
-| Fonte dos assets | pacotes livres (Kenney, Quaternius), geração 3D por IA, modelagem própria | licença de cada asset precisa ser registrada |
-| Onde guardar referências | links e miniaturas em `docs/arte/referencias.md`; arquivos grandes fora do Git (ou Git LFS) | a criar quando a direção for definida |
+| Dimensão | 3D com aparência de 2.5D | mantém a ADR 0002 e dá luz e sombra de graça |
+| Câmera | ortográfica e isométrica, fixa | mostra a sala inteira, então o jogador vê quem está com quem |
+| Corte | só as duas paredes do fundo; piso com laje aparente | as paredes da frente não atrapalham a visão |
+| Estilo do mundo | cores chapadas e foscas, traço de tinta na pós-produção | esconde a simplicidade das formas e une tudo |
+| Estilo da interface | dossiê: cortiça, polaroide, papel datilografado, caneta | onde o jogador pensa, a arte vira raciocínio |
+| Fonte dos assets | formas geradas por código; fontes livres | 12 personagens saem dos enums, sem malha externa |
 
-## O que já está fixado pelo código
+## Regras de cor e luz
 
-- **12 personas** com aparência em enums: porte, pele, cabelo (cor e estilo), pelos faciais, peça de roupa, cor da roupa (`Paleta`), acessórios. Ver `docs/elenco.md`.
-- **3 mapas** de 8 locais cada (24 locais), com a cena esperada em `res://cenas/<mapa>/<local>.tscn`. Ver `docs/mapas.md`.
-- Modelo de cada persona esperado em `res://personagens/<chave>.tscn`.
-- O cliente Godot não decide regra: só mostra eventos e envia comandos (constituição, princípio 7).
+- **Fundo:** azul-noite quase preto (`#080B16`). A sala é a única coisa acesa.
+- **Luz:** abajures quentes contra janela fria. Cada sala tem uma fonte quente dominante e os cantos ficam escuros.
+- **Vermelho é informação.** Fio, alfinete e carimbo usam `#B3141C`. Evite vermelho vivo na mobília, ou ele perde o sentido no quadro.
+- **Roupas:** só `Paleta` (`conteudo/elenco/aparencia.py`). A cor da roupa é o que distingue uma pessoa de longe.
 
-## Restrições para decidir bem
+## Regras de forma
 
-- Modelar à mão 12 personagens e 24 locais é muito trabalho. Como a aparência já é dado (enums), um **personagem modular** montado por código (corpo por porte, cabelo, roupa e acessórios como peças) evita 12 modelos separados.
-- O assistente de código escreve GDScript, cenas `.tscn`, shaders, UI e formas simples. Ele **não esculpe nem pinta texturas**: malhas novas vêm de pacotes de assets, de ferramenta de geração 3D ou do dono do projeto.
-- A paleta oficial é o enum `Paleta` (`conteudo/elenco/aparencia.py`); cor nova entra lá, com hex.
+- A silhueta vem primeiro: chapéu, casaco e cabelo precisam ser lidos a 140 px de altura.
+- Personagens têm cabeça um pouco grande, para a expressão aparecer na foto do quadro.
+- Sala boa tem bagunça: papéis, livros empilhados, objetos no chão. Bagunça é onde a pista se esconde.
 
-## Para destravar
+## Limites conhecidos
 
-1. Escolher dimensão, estilo e câmera.
-2. Reunir referências (links com uma frase sobre o que cada uma ensina).
-3. Reescrever este arquivo com a direção decidida e criar `docs/arte/referencias.md` e `docs/arte/pipeline.md`.
-4. Só então atualizar a spec 006 (cliente Godot) e começar a fatia vertical: uma sala, duas personas, uma partida gravada.
+- Salas não servem para primeira pessoa (fase 3 da spec 006). Decidir antes de chegar lá.
+- O traço de tinta depende do renderizador Forward+, que não exporta para web.
+- Rostos são simples e não têm animação de fala. O balão é que mostra quem fala.

@@ -7,8 +7,14 @@ Cliente 3D (Godot 4). **Burro por princípio**: mostra eventos e envia comandos 
 | Caminho | O que tem |
 | --- | --- |
 | `project.godot`, `config.cfg` | projeto e configuração (URL da API) |
-| `scenes/main.tscn` | cena inicial |
-| `scripts/api_client.gd`, `event_stream.gd`, `main.gd` | cliente HTTP, WebSocket de eventos e cena principal |
+| `scenes/fatia.tscn` | cena inicial: toca a partida gravada (spec 010) |
+| `scenes/main.tscn` | esqueleto que fala com a API (fase 0 da spec 006) |
+| `scripts/api_client.gd`, `event_stream.gd`, `main.gd` | cliente HTTP, WebSocket de eventos e cena do esqueleto |
+| `scripts/fatia.gd`, `quadro.gd` | reprodutor da gravação e quadro de investigação |
+| `scripts/arte/` | `kit.gd` (formas e palco), `personagem.gd`, salas |
+| `personagens/`, `cenas/` | uma cena por persona e por local |
+| `dados/` | `elenco.json` (**gerado**, `just docs`) e `partida_gravada.json` |
+| `shaders/`, `fontes/` | traço de tinta, cortiça, foto; fontes livres |
 | `README.md` | como abrir o projeto e conceitos básicos do Godot |
 
 ## Contratos que o cliente consome
@@ -23,5 +29,6 @@ Cliente 3D (Godot 4). **Burro por princípio**: mostra eventos e envia comandos 
 - Nenhuma regra de jogo em GDScript. Dúvida de "pode ou não" => pergunte à API.
 - Tudo o que o jogador vê vem de evento ou de `/estado`; nunca invente estado local.
 - Nomes de cena e modelo seguem as chaves de `docs/`; renomear exige mudar `conteudo/` e regenerar docs.
-- Ainda não há arte nem cenas finais: os caminhos são reservados e a direção de arte está pendente (`docs/arte/direcao.md`). Não produza assets antes dela.
+- Arte segue `docs/arte/direcao.md` e `docs/arte/pipeline.md`. Só a biblioteca existe; as outras 23 salas são caminhos reservados.
+- Mudança visual se confere rodando o Godot e olhando. O CI não roda o Godot.
 - Explique conceitos do Godot devagar (o dono é de dados): nó, cena, sinal, script.
